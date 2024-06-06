@@ -2,7 +2,7 @@ FROM python
 
 WORKDIR /rpa
 
-COPY app.py /rpa/
+COPY rpa.py /rpa/
 
 COPY requirements.txt /rpa/
 
