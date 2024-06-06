@@ -3,8 +3,11 @@ from selenium import webdriver
 import datetime
 from selenium.webdriver.common.by import By
 import time
+from selenium.webdriver.edge.options import Options
 
-driver = webdriver.Edge()
+options = Options()
+options.add_argument('--headless')
+driver = webdriver.Edge(options=options)
 
 driver.get("https://www.google.com/finance/quote/USD-BRL?sa=X&sqi=2&ved=2ahUKEwjHod2jweyEAxV4LrkGHTzSCNsQmY0JegQIDhAv")
 
